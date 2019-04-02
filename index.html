@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="head">
+            <h1 class="head">Вакансия: Junior Frontend Developer</h1>
+    </div>
+
+    <div class="photo">
+        <p><img src="IMG_4498.JPG" alt="candidate photo" class="photo" width="200" height="270"></p>
+    </div>
+    
+    <div>
+      <form action="index.html" method="post">
+
+        <label for="name">Ваше имя: </label> <br>
+        <input type="text" placeholder="Полина" id="name"> <br>
+
+        <label for="git-link">Ссылка на репозиторий GitHub:</label> <br>
+        <input type="url" placeholder="https://github.com/polinafraiden/test.git" id="git-link"> <br>
+
+        <label for="career">Опыт работы: </label> <br>
+        <input type="text" placeholder="Нет" id="career">
+
+        <label for="date">Дата собеседования:</label>
+        <input type="date" name="date" id="date">
+
+        <label for="radio">Уровень английского:</label>
+        <input type="radio" name="english" value="плохо" checked> Плохо
+        <input type="radio" name="english" value="Средне"> Средне
+        <input type="radio" name="english" value="хорошо"> Хорошо
+        <input type="radio" name="english" value="Превосходно"> Превосходно
+
+        <label for="skills">Ключевые навыки:</label>
+        <ul class="skills" style="list-style-type:disc;">
+            <li>HTML</li>
+            <li>CSS/LESS</li>
+            <li>JavaScript</li>
+            <li>...</li>
+          </ul>  
+        <input type="text" name="skill-add" value="Введите навык">
+        <input type="submit" value="Добавить в список" class="add-to-list">
+
+        <label for="communication">Коммуникабельность:</label>
+        <select class="communication">
+            <option value="пусто">...</option>
+            <option value="такое">Ну такое</option>
+            <option value="средне">Средненько</option>
+            <option value="хорошо">Люблю общаться</option>
+            <option value="очень хорошо">Да я со всеми подружусь в первый день!</option>
+        </select>
+
+        <label for="salary">Желаемая з/п:</label>
+        <input type="number" placeholder="Введите значение"  name="salary" value="Введите значение">
+
+        <label for="criteria">Подходит по критериям:</label>
+        <input type="checkbox" name="check1" value="check1">Знание английского
+        <input type="checkbox" name="check2" value="сheck2">Оклад
+        <input type="checkbox" name="check3" value="check3">Навыки
+        <input type="checkbox" name="check4" value="Check4">Сразу видно, что свой человек
+
+        <p>Образование, курсы и т.п. </p>
+        <table class="table" id="table">
+            <tr class="1tr">
+              <th>№</th>
+              <th>Сроки обучения</th>
+              <th>Наименование учебного заведения, курсов и т.д.</th>
+            </tr>
+            <tr class="2tr">
+              <td>1</td>
+              <td>2004-2009</td>
+              <td>ВШЭУ</td>
+            </tr>
+            <tr class="3tr">
+              <td>2</td>
+              <td>2018-2019</td>
+              <td>HopScotch</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>2019 - по н.в.</td>
+              <td>LevelUp</td>
+            </tr>
+        </table>
+        
+        <button style="vertical-align: middle"> Отправить</button>
+      </form>    
+    </div>
+  </body>
+</html>
