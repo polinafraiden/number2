@@ -9,13 +9,14 @@
     <div class="head">
             <h1 class="head">Вакансия: Junior Frontend Developer</h1>
     </div>
-
-    <div class="photo">
-        <p><img src="IMG_4498.JPG" alt="candidate photo" class="photo" width="200" height="270"></p>
-    </div>
     
     <div>
       <form action="index.html" method="post">
+        <div class="photo" style="display:inline-block" >
+          <img src="IMG_4498.JPG" alt="candidate photo" class="photo" width="200" height="270">
+        </div>
+
+        <div style="display:inline-block">
 
         <label for="name">Ваше имя: </label> <br>
         <input type="text" placeholder="Полина" id="name"> <br>
@@ -26,16 +27,20 @@
         <label for="career">Опыт работы: </label> <br>
         <input type="text" placeholder="Нет" id="career">
 
+        </div>
+
+        <br>
+
         <label for="date">Дата собеседования:</label>
         <input type="date" name="date" id="date">
 
-        <label for="radio">Уровень английского:</label>
+        <label>Уровень английского:</label>
         <input type="radio" name="english" value="плохо" checked> Плохо
         <input type="radio" name="english" value="Средне"> Средне
         <input type="radio" name="english" value="хорошо"> Хорошо
         <input type="radio" name="english" value="Превосходно"> Превосходно
 
-        <label for="skills">Ключевые навыки:</label>
+        <label>Ключевые навыки:</label>
         <ul class="skills" style="list-style-type:disc;">
             <li>HTML</li>
             <li>CSS/LESS</li>
@@ -45,8 +50,9 @@
         <input type="text" name="skill-add" value="Введите навык">
         <input type="submit" value="Добавить в список" class="add-to-list">
 
-        <label for="communication">Коммуникабельность:</label>
+        <label>Коммуникабельность:</label>
         <select class="communication">
+            <option value="" selected disabled hidden>...</option>
             <option value="пусто">...</option>
             <option value="такое">Ну такое</option>
             <option value="средне">Средненько</option>
@@ -54,7 +60,7 @@
             <option value="очень хорошо">Да я со всеми подружусь в первый день!</option>
         </select>
 
-        <label for="salary">Желаемая з/п:</label>
+        <label>Желаемая з/п:</label>
         <input type="number" placeholder="Введите значение"  name="salary" value="Введите значение">
 
         <label for="criteria">Подходит по критериям:</label>
@@ -63,8 +69,8 @@
         <input type="checkbox" name="check3" value="check3">Навыки
         <input type="checkbox" name="check4" value="Check4">Сразу видно, что свой человек
 
-        <p>Образование, курсы и т.п. </p>
         <table class="table" id="table">
+          <thead> <p> Образование, курсы и т.п. </p></thead>
             <tr class="1tr">
               <th>№</th>
               <th>Сроки обучения</th>

@@ -17,12 +17,6 @@ body {
     text-align: center
 }
 
-.photo {
-    display: block;
-    float:left; 
-    margin: 3em 3em 3em 22em
-   }
-
 *, *:before, *:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -118,3 +112,4 @@ td, th {
   padding: 8px;
   margin-bottom: 8em;
 }
+
